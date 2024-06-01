@@ -22,7 +22,7 @@ class MultiHeadAttention(nn.Module):
         self.W_q = nn.linear(d_model, d_model)
         self.W_k = nn.linear(d_model, d_model)
         self.W_v = nn.linear(d_model, d_model)
-        self.proj = nn.Linead(d_model , d_model)
+        self.proj = nn.Linear(d_model , d_model)
         self.n_heads = n_heads
 
     def split(self ,  tensor):
